@@ -1,7 +1,6 @@
 import unittest
 import logging
 
-# Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
     filename='runner_tests.log',
@@ -63,7 +62,7 @@ class RunnerTest(unittest.TestCase):
 
     def test_walk(self):
         try:
-            Runner("Test", -5)  # Передаем отрицательное значение
+            Runner("Test", -5)  
         except ValueError:
             logging.warning("Неверная скорость для Runner")
         else:
@@ -71,7 +70,7 @@ class RunnerTest(unittest.TestCase):
 
     def test_run(self):
         try:
-            Runner(123, 10)  # Передаем неверный тип для имени
+            Runner(123, 10) 
         except TypeError:
             logging.warning("Неверный тип данных для объекта Runner")
         else:
