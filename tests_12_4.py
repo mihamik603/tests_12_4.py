@@ -1,13 +1,11 @@
 import unittest
 import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    filename='runner_tests.log',
-    filemode='w',
-    encoding='utf-8',
-    format='%(levelname)s: %(message)s'
-)
+logging.basicConfig(level=logging.INFO,
+                    filename='runner_tests.log',
+                    filemode='w',
+                    encoding='utf-8',
+                    format='%(levelname)s: %(message)s')
 
 class Runner:
     def __init__(self, name, speed):
